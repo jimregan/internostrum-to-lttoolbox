@@ -1,0 +1,35 @@
+# Grammatical symbol declaration
+
+%symbol <PresInd>; # Indicative present
+%symbol <1p>; # First person
+%symbol <sg>; # Singular
+%symbol <2p>; # Second person
+%symbol <pl>; # Plural
+# etc.
+
+# Paradigm definition:
+
+['on] > ('on:sg) # nouns
+      | (ones:pl) ; # -'on
+
+[pi1] > (s:<2p><sg>) # indicative present
+      | (0:<3p><sg>)
+      | (mos:<1p><pl>)
+      | (n:<3p><pl>) ;
+
+[ii1] > (a:<1p><sg>) # imperfective endings
+      | (as:<2p><sg>)
+      | (a:<3p><sg>)
+      | (ais:<2p><pl>)
+      | (an:<3p><pl>) ;
+
+[v1c] > (e:<Imper><3p><sg>+)[pron1pl] # first conj
+      | (a:<Imper><2p><sg>+)[pron1pl] # with accent
+      | (en:<Imper><3p><pl>+)[pron1p] ; # in root
+
+# Dictionary
+%dic
+
+(am:amar<verb>)[V1C]; # amar
+('am:amar<verb>)[v1c];
+(acci:acci'on<noun><fem>)['on]; # acci'on
