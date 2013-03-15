@@ -1,0 +1,43 @@
+<!-- Grammatical symbol declaration-->
+<dictionary>
+  <alphabet>abcedefghijklmnopqrstuvwxyzáéíóú</alphabet>
+  <sdefs>
+    <sdef n="PresInd c="Indicative present"/>
+    <sdef n="1p c="First person"/>
+    <sdef n="sg c="Singular"/>
+    <sdef n="2p c="Second person"/>
+    <sdef n="pl c="Plural"/>
+  </sdefs>
+<!-- etc.-->
+<!-- Paradigm definition:-->
+  <pardefs>
+    <pardef n="ón">
+      <e><p><l>ón</l><r>sg</r></p></e><!--nouns-->
+      <e><p><l>ones</l><r>pl</r></p></e>
+    </pardef> <!---'on-->
+    <pardef n="pi1">
+      <e><p><l>s</l><r><s n="2p"/><s n="sg"/></r></p></e><!--indicative present-->
+      <e><p><l></l><r><s n="3p"/><s n="sg"/></r></p></e>
+      <e><p><l>mos</l><r><s n="1p"/><s n="pl"/></r></p></e>
+      <e><p><l>n</l><r><s n="3p"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="ii1">
+      <e><p><l>a</l><r><s n="1p"/><s n="sg"/></r></p></e><!--imperfective endings-->
+      <e><p><l>as</l><r><s n="2p"/><s n="sg"/></r></p></e>
+      <e><p><l>a</l><r><s n="3p"/><s n="sg"/></r></p></e>
+      <e><p><l>ais</l><r><s n="2p"/><s n="pl"/></r></p></e>
+      <e><p><l>an</l><r><s n="3p"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="v1c">
+      <e><p><l>e</l><r><s n="Imper"/><s n="3p"/><s n="sg"/><j/></r></p><par n="pron1pl"/></e><!--first conj-->
+      <e><p><l>a</l><r><s n="Imper"/><s n="2p"/><s n="sg"/><j/></r></p><par n="pron1pl"/></e><!--with accent-->
+      <e><p><l>en</l><r><s n="Imper"/><s n="3p"/><s n="pl"/><j/></r></p><par n="pron1p"/></e>
+    </pardef> <!--in root-->
+  </pardefs>
+<!-- Dictionary-->
+  <section id="main" type="standard">
+    <e><p><l>am</l><r>amar<s n="verb"/></r></p><par n="V1C"/></e><!--amar-->
+    <e><p><l>ám</l><r>amar<s n="verb"/></r></p><par n="v1c"/></e>
+    <e><p><l>acci</l><r>acción<s n="noun"/><s n="fem"/></r></p><par n="ón"/></e><!--acci'on-->
+  </section>
+</dictionary>
