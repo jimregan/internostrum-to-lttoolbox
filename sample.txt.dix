@@ -2,11 +2,11 @@
 <dictionary>
   <alphabet>abcedefghijklmnopqrstuvwxyzáéíóú</alphabet>
   <sdefs>
-    <sdef n="PresInd c="Indicative present"/>
-    <sdef n="1p c="First person"/>
-    <sdef n="sg c="Singular"/>
-    <sdef n="2p c="Second person"/>
-    <sdef n="pl c="Plural"/>
+    <sdef n="PresInd" c="Indicative present"/>
+    <sdef n="1p" c="First person"/>
+    <sdef n="sg" c="Singular"/>
+    <sdef n="2p" c="Second person"/>
+    <sdef n="pl" c="Plural"/>
   </sdefs>
 <!-- etc.-->
 <!-- Paradigm definition:-->
