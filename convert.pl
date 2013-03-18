@@ -46,7 +46,7 @@ my $gram = q {
 	emptyline: /^$/
 
 	sdef: "%symbol" '<' name '>' ';' '#' /.*/
-	{ $return = '    <sdef n="' . $item[3] . ' c="' . $item[7] .'"/>' . "\n" }
+	{ $return = '    <sdef n="' . $item[3] . '" c="' . $item[7] .'"/>' . "\n" }
 	| "%symbol" '<' name '>' ';'
 	{ $return = '    <sdef n="' . $item[3] . '"/>' . "\n" }
 	sdefs: sdef(s)
